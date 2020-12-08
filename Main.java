@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg70alter;
+package pkg35rand;
 
 /**
  *
@@ -16,20 +16,26 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int a=70,b=71;
-        System.out.print(a+","+b+",");
-        for(int i=2;i<=10;i++)
+        int a=3,b=5;
+        for(int i=1;i<=9;i++)
         {
             if(i%3==0)
-            {
-                System.out.print(a+",");
-            }
+                
+                {
+                    System.out.print("35"+",");
+                }
+            
+            else if(i%2==0)
+                {
+                    System.out.print(b+",");
+                    b=b+5+2;
+                }
             else
-            {
-                b+=5;
-                System.out.print(b+",");
-            }
+                {
+                    System.out.print(a+",");
+                    a=a+5+2;
+                
+                }
         }
     }
-    
 }
